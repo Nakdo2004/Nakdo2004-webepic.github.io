@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dead Redemption 2 | Epic游戏商城</title>
+    <link rel="stylesheet" href="../css/index.min.css">
+    <link rel="stylesheet" href="../css/index2.min.css">
+    <link rel="icon" href="../favicon.ico">
+    <style>
+        /* 仅针对商品详情页的样式，不影响头部 */
+        .game-container {
+            width: 100%;
+            margin: 30px auto;
+            display: flex;
+            background: rgb(34, 34, 34);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .game-media {
+            width: 60%;
+            padding: 20px;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .game-media img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .game-info {
+            flex: 1;
+            padding: 30px;
+            border-left: 1px solid #eee;
+        }
+
+        .game-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .game-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-right: 10px;
+        }
+
+        .game-price {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 16px;
+        }
+
+        .current-price {
+            font-size: 28px;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        .discount {
+            background: #e91e63;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .deadline {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .action-buttons {
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #0074e4;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .game-details {
+            margin-bottom: 25px;
+        }
+
+        .detail-item {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .detail-label {
+            color: white;
+            display: inline-block;
+            width: 80px;
+        }
+
+        .game-description {
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* 修复a标签颜色，不影响头部 */
+        main a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        main a:hover {
+            text-decoration: underline;
+        }
+        h1,h3,p,span{
+            color: white;
+        }
+        .text-right .span {
+    text-align: right;
+           }
+           .footer_ul{
+            text-align: center;
+             margin-left: 40%; 
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 - 完全保持与index.html一致 -->
+    <header>
+        <ul>
+            <li>
+                <h1><span>epic</span></h1>  
+            </li>
+            <li>
+                <a href="../index.html" class="aaa">首页</a>
+            </li>
+            <li>
+                <a href="./1.html">商城</a>
+            </li>
+            <li>
+                <a href="./2.html">新闻</a>
+            </li>
+            <li>
+                <a href="./3.html">常见问题</a>
+            </li>
+            <li>
+                <a href="./4.html">帮助</a>
+            </li>
+        </ul>
+        <div>
+            <a href="./Register.html">注册</a>
+            <a href="./5.html">登录</a>
+        </div>
+        <div class="cc"></div>
+    </header>
+
+    <!-- 游戏详情主要内容 -->
+    <main>
+        <div class="game-container">
+            <div class="game-media">
+                <video width="100%" controls poster="../images/red.jpg">
+                    <source src="../images/mp4/movie480.webm" type="video/mp4">
+                    您的浏览器不支持 HTML5 视频标签。
+                </video>
+                <div class="text-right" style="margin-top: 20px;">
+                    <p>亚瑟·摩根和范德林都带众星一群建立在外的亡命之徒。联邦侦探和黄金猎人在他们的身后穷追不舍，亚瑟一行人必须在广袤密布的邮地上四处劫掠。挣扎求生而帮派内部的矛盾分化日渐加深，摆在亚瑟面前的将是他无法避免的抉择：究竟是选择自己的理想，还是选择效忠于抚养了自己的帮派。
+
+                        <br><br>Red Dead Redemption 2 已荣获超过 175 项年度游戏奖项且获得超过 250 个满分评价，游戏以 19 世纪的最后岁月为背景，述说一个关于荣誉与忠诚的史诗故事。</p>
+                </div>
+            </div>
+            
+            <div class="game-info">
+                <h1 class="game-title">《Red Dead Redemption 2》</h1>
+                
+                <div class="game-rating">
+                    <span class="stars">★★★★★</span>
+                    <span>4.9</span>
+                </div>
+                
+                <p style="margin-bottom: 20px; color: #666;">剧情走向经典视频</p>
+                
+                <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+                
+                <h3 style="margin-bottom: 15px;">基础游戏</h3>
+                
+                <div class="game-price">
+                    <div>
+                        <span class="original-price">¥279</span>
+                        <span class="current-price">¥89.75</span>
+                        <span class="discount">68% OFF</span>
+                    </div>
+                    <div class="deadline">优惠截止于2025/8/12 23:00</div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="#" class="btn btn-primary">立即购买</a>
+                    <a href="#" class="btn btn-secondary">加入购物车</a>
+                </div>
+                
+                <div class="game-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Epic 奖励</span>
+                        <span>延期 20%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">退款类型</span>
+                        <span>可自由退款</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">开发商</span>
+                        <span>Rockstar Games</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">发行商</span>
+                        <span>Rockstar Games</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">发行日期</span>
+                        <span>19/11/05</span>
+                    </div>
+                </div>
+                
+                <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+                
+                <div class="game-description">
+                    <!-- <p>亚瑟·摩根和范德林都带众星一群建立在外的亡命之徒。联邦侦探和黄金猎人在他们的身后穷追不舍，亚瑟一行人必须在广袤密布的邮地上四处劫掠。挣扎求...</p> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 - 完全保持与index.html一致 -->
+    <footer>
+        <p>
+            © 2021, Epic Games, Inc. 版权所有。Epic、Epic Games、Epic Games标志、Fortnite（堡垒之夜）、Fortnite（堡垒之夜）标志、Unreal（虚幻）、Unreal
+            Engine
+        </p>
+        <p>
+            （虚幻引擎）、Unreal Engine（虚幻引擎）标志、Unreal Tournament（虚幻竞技场）以及Unreal Tournament（虚幻竞技场）标志属于Epic Games, Inc.在美利坚合
+        </p>
+        <p>
+            国及其他地区的商标或已注册商标。其他品牌或产品名称属于其各自拥有者的商标。美国以外事务通过Epic Games International, S.à r.l.办理。
+        </p>
+        <div class="footer_p"></div>
+        <div class="cc"></div>
+        <ul>
+            <li><a href="">服务条款</a></li>
+            <li><a href="">隐私政策</a></li>
+            <li><a href="">商店退款政策</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

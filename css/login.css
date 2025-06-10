@@ -1,0 +1,109 @@
+/* login.css 更新后的样式 */
+.login-container {
+    width: 500px;  /* 增大宽度 */
+    margin: 80px auto;  /* 调整上边距 */
+    padding: 50px 60px;  /* 增大内边距 */
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;  /* 设置最小高度 */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 40px;  /* 增大下边距 */
+    font-size: 28px;  /* 增大字体 */
+    font-weight: 400;
+    color: #fff;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    max-width: 380px;  /* 限制最大宽度 */
+    padding: 16px 20px;  /* 增大内边距 */
+    margin: 15px 0;  /* 调整外边距 */
+    border: 1px solid #444;
+    border-radius: 6px;  /* 增大圆角 */
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;  /* 增大字体 */
+    transition: all 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #0078f2;
+    box-shadow: 0 0 0 2px rgba(0, 120, 242, 0.2);
+    outline: none;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    max-width: 380px;
+    padding: 16px;
+    margin: 25px auto 15px;  /* 调整外边距 */
+    border: none;
+    border-radius: 6px;
+    background-color: #0078f2;
+    color: white;
+    font-size: 18px;  /* 增大字体 */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #0066d1;
+    transform: translateY(-1px);
+}
+
+.dlup2 {
+    text-align: center;
+    color: #c1c1c1;
+    margin-top: 30px;  /* 增大上边距 */
+    font-size: 16px;  /* 增大字体 */
+}
+
+.dlup2 a {
+    color: #0078f2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.dlup2 a:hover {
+    color: #0066d1;
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 40px 30px;
+        min-height: 350px;
+    }
+    
+    .login-container input[type="text"],
+    .login-container input[type="password"],
+    .login-container input[type="submit"] {
+        max-width: 100%;
+    }
+}

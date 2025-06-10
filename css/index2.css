@@ -1,0 +1,148 @@
+main{
+    width: 1444px;
+    margin: 0 auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.topl {
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0 50px 0;
+    width: 1186px;
+    height: 556px;
+    background-color: red;
+}
+
+.jiantou {
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(158, 154, 154, 0.7);
+    color: white;
+    z-index: 999;
+}
+
+.left {
+    position: absolute;
+    top: 263px; /* 调整箭头位置 */
+    left: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.right {
+    position: absolute;
+    top: 263px; /* 调整箭头位置 */
+    left: 1166px; /* 调整箭头位置 */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.topl img {
+    width: 1186px;
+    height: 556px;
+}
+
+.topl .pic {
+    width: 600%; /* 6倍宽度以容纳所有图片 */
+}
+
+.topl .pic li {
+    float: left;
+}
+
+.topl .lis {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.topl .lis li {
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.topl .lis .selected {
+    background-color: cyan;
+}
+.r1 a,.r2 a,.r3 a,.r4 a,.r5 a{
+    display: block;
+    background-image: url(../images/index_topr.png);
+    height: 111px;
+    width: 257px;
+}
+.r2 a{
+    background-position-y: -111px;
+}
+.r3 a{
+    background-position-y: -222px;
+}
+.r4 a{
+    background-position-y: -333px;
+}
+.r5 a{
+    background-position-y: -444px;
+}
+.mid_p1{
+    margin-bottom: 20px;
+    color: rgb(245, 245, 245);
+}
+dd{
+    margin-top: 30px;
+}
+.mid_2{
+    color: rgb(229, 229, 229);
+}
+.mid_3{
+    color: rgb(147, 147, 147);
+    margin: 5px 0;
+}
+.mid_4{
+    color: rgb(217, 217, 217);
+}
+dt img{
+    width: 270px;
+    height: 360px;
+}
+dl{
+    float: left;
+    margin-right: 18px;
+}
+.footer_p1{
+    color: rgb(245, 245, 245);
+    padding: 50px 0 20px 0;
+}
+.footer_img{
+    padding-bottom: 140px;
+    background-image: url(../images/index_footer.png);
+    display: block;
+    width: 1442px;
+    height: 567px;
+    background-repeat: no-repeat;
+}
+.top{
+    position: relative;
+    z-index: 1000;
+}
+.header{
+    z-index: 1001;
+}

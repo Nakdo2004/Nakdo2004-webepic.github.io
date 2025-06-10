@@ -1,1 +1,371 @@
-<h1>1</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic</title>
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/index2.min.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .topl {
+            position: relative;
+            overflow: hidden;
+            margin: 40px 0 50px 0;
+            width: 1186px;
+            height: 556px;
+            background-color: red;
+        }
+
+        .jiantou {
+            font-size: 24px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            width: 40px;
+            height: 60px;
+            line-height: 60px;
+            background: rgba(158, 154, 154, 0.7);
+            color: white;
+            z-index: 999;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .jiantou:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .left {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 99;
+        }
+
+        .right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            z-index: 99;
+        }
+
+        .topl img {
+            width: 1186px;
+            height: 556px;
+            display: block;
+        }
+
+        .topl .pic {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .topl .pic li {
+            flex-shrink: 0;
+            width: 1186px;
+        }
+
+        .topl .lis {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .topl .lis li {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .topl .lis li:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .topl .lis .selected {
+            background-color: cyan;
+            width: 24px;
+            border-radius: 6px;
+        }
+        .footer .a{
+            position: relative;
+            left: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <h1><span>epic</span></h1>  
+            </li>
+            <li>
+                <a href="index.html" class="aaa">首页</a>
+            </li>
+            <li>
+                <a href="./filas/1.html">商城</a>
+            </li>
+            <li>
+                <a href="./filas/2.html">新闻</a>
+            </li>
+            <li>
+                <a href="./filas/3.html">常见问题</a>
+            </li>
+            <li>
+                <a href="./filas/4.html">帮助</a>
+            </li>
+        </ul>
+        <a href="./filas/5.html">注册</a>
+        <a href="./filas/5.html">登录</a>
+
+        <div class="cc"></div>
+    </header>
+
+    <main>
+        <div class="top">
+            <p>首页</p>
+            <div class="topl">
+                <a href="#" class='left jiantou'>&lt;</a>
+                <a href="#" class='right jiantou'>&gt;</a>
+                <ul class='pic'>
+                    <li>
+                        <a href="./filas/1.html"><img src="./images/index_r1.png" alt="Image 1"></a>
+                    </li>
+                    <li>
+                        <a href="./filas/2.html"><img src="./images/index_1.jpg" alt="Image 2"></a>
+                    </li>
+                    <li>
+                        <a href="./filas/3.html"><img src="./images/index_2.jpg" alt="Image 3"></a>
+                    </li>
+                </ul>
+                <ul class="lis">
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="topr">
+                <div class="r1"><a href="#"></a></div>
+                <div class="r2"><a href="#"></a></div>
+                <div class="r3"><a href="#"></a></div>
+                <div class="r4"><a href="#"></a></div>
+                <div class="r5"><a href="#"></a></div>
+            </div>
+            <div class="cc"></div>
+        </div>
+
+        <div class="mid">
+            <p class="mid_p1">大特卖</p>
+            <dl> 
+                <dt><a href="./filas/Shopping-RAD.html"><img data-lazy-src="images/mid_1.png"></a></dt>
+                <dd>
+                    <a href="./filas/Shopping-RAD.html">
+                        <p class="mid_2">Red Dead Redemption 2</p>
+                        <p class="mid_3">Rockstar Games</p>
+                        <p class="mid_4">原价:¥228 现价:¥152.76</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="./filas/Shopping-death.html"><img data-lazy-src="images/mid_2.png"></a></dt>
+                <dd>
+                    <a href="./filas/Shopping-death.html">
+                        <p class="mid_2">Death Stranding</p>
+                        <p class="mid_3">Kojima Productions</p>
+                        <p class="mid_4">原价:¥273 现价:¥109.20</p>
+                    </a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img data-lazy-src="images/mid_3.png"></dt>
+                <dd>
+                    <p class="mid_2">Borderlands 3</p>
+                    <p class="mid_3">Gearbox Software | 2K</p>
+                    <p class="mid_4">原价:¥195 现价:¥64.35</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img data-lazy-src="images/mid_4.png"></dt>
+                <dd>
+                    <p class="mid_2">Mafia: Trilogy</p>
+                    <p class="mid_3">Hangar 13 | 2K</p>
+                    <p class="mid_4">原价:¥182 现价:¥109.20</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><img data-lazy-src="images/mid_5.png"></dt>
+                <dd>
+                    <p class="mid_2">ARK: Survival Evolved</p>
+                    <p class="mid_3">Studio Wildcard</p>
+                    <p class="mid_4">原价:¥124 现价:¥24.80</p>
+                </dd>
+            </dl>
+            <div class="cc"></div>
+        </div>
+
+        <div class="footer">
+            <p class="footer_p1">Epic Games商城目录</p>
+            <a href="filas/1.html" class="footer_img"></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            © 2021, Epic Games, Inc. 版权所有。Epic、Epic Games、Epic Games标志、Fortnite（堡垒之夜）、Fortnite（堡垒之夜）标志、Unreal（虚幻）、Unreal
+            Engine
+        </p>
+        <p>
+            （虚幻引擎）、Unreal Engine（虚幻引擎）标志、Unreal Tournament（虚幻竞技场）以及Unreal Tournament（虚幻竞技场）标志属于Epic Games, Inc.在美利坚合
+        </p>
+        <p>
+            国及其他地区的商标或已注册商标。其他品牌或产品名称属于其各自拥有者的商标。美国以外事务通过Epic Games International, S.à r.l.办理。
+        </p>
+        <div class="footer_p"></div>
+        <div class="cc"></div>
+        <ul>
+            <li><a href="">服务条款</a></li>
+            <li><a href="">隐私政策</a></li>
+            <li><a href="">商店退款政策</a></li>
+        </ul>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/EasyLazyload.min.js"></script>
+    <script>
+        lazyLoadInit({
+            coverColor: "white",
+            coverDiv: "<h1>test</h1>",
+            offsetBottom: 0,
+            offsetTopm: 0,
+            showTime: 1100,
+            onLoadBackEnd: function(i, e) {
+                console.log("onLoadBackEnd:" + i);
+            },
+            onLoadBackStart: function(i, e) {
+                console.log("onLoadBackStart:" + i);
+            }
+        });
+
+        // 轮播图逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const topl = document.querySelector('.topl');
+            const pic = document.querySelector('.topl .pic');
+            const imgs = document.querySelectorAll('.topl .pic li');
+            const dots = document.querySelectorAll('.topl .lis li');
+            const leftBtn = document.querySelector('.topl .left');
+            const rightBtn = document.querySelector('.topl .right');
+
+            let index = 0;
+            const total = imgs.length;
+            let timer;
+            const intervalTime = 3000; // 轮播间隔时间
+
+            // 初始化轮播
+            function initSlider() {
+                // 设置初始状态
+                changeTo(0);
+                startAutoPlay();
+                
+                // 鼠标悬停暂停
+                topl.addEventListener('mouseenter', pauseAutoPlay);
+                topl.addEventListener('mouseleave', startAutoPlay);
+                
+                // 左右箭头点击事件
+                leftBtn.addEventListener('click', handleLeftClick);
+                rightBtn.addEventListener('click', handleRightClick);
+                
+                // 小圆点点击事件
+                dots.forEach((dot, idx) => {
+                    dot.addEventListener('click', () => handleDotClick(idx));
+                });
+            }
+
+            // 切换图片函数
+            function changeTo(idx) {
+                pic.style.transform = `translateX(-${idx * 100}%)`;
+                updateDots(idx);
+                index = idx;
+            }
+
+            // 更新小圆点状态
+            function updateDots(idx) {
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('selected', i === idx);
+                });
+            }
+
+            // 左箭头点击处理
+            function handleLeftClick(e) {
+                e.preventDefault();
+                pauseAutoPlay();
+                let newIndex = (index - 1 + total) % total;
+                changeTo(newIndex);
+                startAutoPlay();
+            }
+
+            // 右箭头点击处理
+            function handleRightClick(e) {
+                e.preventDefault();
+                pauseAutoPlay();
+                let newIndex = (index + 1) % total;
+                changeTo(newIndex);
+                startAutoPlay();
+            }
+
+            // 小圆点点击处理
+            function handleDotClick(idx) {
+                pauseAutoPlay();
+                changeTo(idx);
+                startAutoPlay();
+            }
+
+            // 开始自动播放
+            function startAutoPlay() {
+                pauseAutoPlay(); // 先清除可能存在的定时器
+                timer = setInterval(() => {
+                    let newIndex = (index + 1) % total;
+                    changeTo(newIndex);
+                }, intervalTime);
+            }
+
+            // 暂停自动播放
+            function pauseAutoPlay() {
+                if (timer) {
+                    clearInterval(timer);
+                    timer = null;
+                }
+            }
+
+            // 初始化轮播
+            initSlider();
+        });
+    </script>
+</body>
+</html>

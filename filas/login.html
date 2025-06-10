@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic-登录</title>
+    <link rel="stylesheet" href="../css/index.min.css">
+    <link rel="stylesheet" href="../css/5.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../favicon.ico">
+</head>
+<style>
+    .footer_ul{
+    text-align: center;
+     margin-left: 40%; 
+
+}
+</style>
+<body>
+    <header>
+        <ul>
+            <li>
+                <h1><span>epic</span></h1>
+            </li>
+            <li>
+                <a href="../index.html">首页</a>
+            </li>
+            <li>
+                <a href="../filas/1.html">商城</a>
+            </li>
+            <li>
+                <a href="../filas/2.html">新闻</a>
+            </li>
+            <li>
+                <a href="../filas/3.html">常见问题</a>
+            </li>
+            <li>
+                <a href="../filas/4.html">帮助</a>
+            </li>
+        </ul>
+        <a href="./Register.html">注册</a>
+        <a href="./5.html">登录</a>
+
+        <div class="cc"></div>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>登录您的EPIC账户</h2>
+            <div class="login-form">
+                <form id="loginForm">
+                    <input type="text" id="username" name="username" placeholder="用户名" required>
+                    <input type="password" id="password" name="password" placeholder="密码" required>
+                    <input type="submit" value="登录">
+                </form>
+                <p class="dlup2">还没有Epic Games 账户？<a href="./Register.html">注册</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            © 2021, Epic Games, Inc. 版权所有。Epic、Epic Games、Epic Games标志、Fortnite（堡垒之夜）、Fortnite（堡垒之夜）标志、Unreal（虚幻）、Unreal
+            Engine
+        </p>
+        <p>
+            （虚幻引擎）、Unreal Engine（虚幻引擎）标志、Unreal Tournament（虚幻竞技场）以及Unreal Tournament（虚幻竞技场）标志属于Epic Games, Inc.在美利坚合
+        </p>
+        <p>
+            众国及其他地区的商标或已注册商标。其他品牌或产品名称属于其各自拥有者的商标。美国以外事务通过Epic Games International, S.à r.l.办理。
+        </p>
+        <div class="footer_p"></div>
+        <div class="cc"></div>
+        <ul>
+            <li><a href="../filas/terms.html">服务条款</a></li>
+            <li><a href="../filas/privacy.html">隐私政策</a></li>
+            <li><a href="../filas/refund.html">商店退款政策</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+
+        // 处理登录表单提交
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // 这里可以添加验证逻辑
+            if (username && password) {
+                alert(`用户名: ${username}\n欢迎回来！`);
+                // 这里可以添加实际的登录逻辑，比如发送请求到服务器
+            } else {
+                alert('请填写所有字段');
+            }
+        });
+    </script>
+</body>
+
+</html>
